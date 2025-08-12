@@ -33,84 +33,6 @@ export const msoConfigs = {
   
   // Categorias
 
-  item26618: {
-    'agua': {
-      containerId: 'item26623',
-      path: './assets/json/pedrazul.json'
-    }
-  }, 
-  
-  item41805: {
-    'agua': {
-      containerId: 'item41810',
-      path: './assets/json/campinho.json'
-    }
-  },
-
-  item12512: {
-    'arroz': {
-      containerId: 'item12518',
-      path: './assets/json/arroz.json'
-    }
-  },
-
-  item11431: {
-    'chocolate': {
-      containerId: 'item11436',
-      path: './assets/json/chocolate.json'
-    },
-    'industria-capixaba': {
-      containerId: 'item11447',
-      path: './assets/json/industria.json'
-    }
-  },
-
-  item17481: {
-    'trigo': {
-      containerId: 'item17486',
-      path: './assets/json/trigo.json'
-    },
-    'bolo': {
-      containerId: 'item17496',
-      path: './assets/json/bolo.json'
-    }
-  },  
-
-  item41220: {
-    'linguica': {
-      containerId: 'item41225',
-      path: './assets/json/linguica.json'
-    }
-  },
-
-  item14903: {
-    'macarrao': {
-      containerId: 'item14908',
-      path: './assets/json/macarrao.json'
-    }
-  },
-
-  item19958: {
-    'padaria': {
-      containerId: 'item19963',
-      path: './assets/json/monza.json'
-    }
-  },
-
-  item38891: {
-    'padaria': {
-      containerId: 'item38896',
-      path: './assets/json/libano.json'
-    }
-  },
-
-  item38240: {
-    'sal': {
-      containerId: 'item38245',
-      path: './assets/json/sal.json'
-    }
-  },
-
   item28464: {
     'supermercado': {
       containerId: 'item28469',
@@ -347,6 +269,6 @@ export const msoConfigs = {
       containerId: 'item6471',
       path: './assets/json/passageiros.json'
     }
-  }, 
+  } 
 
 }
