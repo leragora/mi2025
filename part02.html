@@ -13,57 +13,6 @@
 <script type="text/javascript" src="assets/js/jquery.anythingslider.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
 <script type="text/javascript" src="assets/js/in5.config.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  // AJUSTE estes valores conforme seu projeto:
-  var PART1_FILE = 'part01.html';   // nome da primeira parte
-  var PART2_FILE = 'part02.html';   // nome da segunda parte
-  var LAST_P1    = 181;              // última página da parte 1
-  var FIRST_P2   = 182;              // primeira página da parte 2
-
-  // Gera ids (#p{data-name}) para poder usar âncoras
-  document.querySelectorAll('.page[data-name]').forEach(function (el) {
-    if (!el.id) el.id = 'p' + el.dataset.name;
-  });
-
-  function getPageNumberFrom(el) {
-    var li = el.closest('.page');
-    return li ? parseInt(li.getAttribute('data-name'), 10) : NaN;
-  }
-
-  // guarda originais, se existirem
-  window.nav = window.nav || {};
-  var _origBack = typeof window.nav.back === 'function' ? window.nav.back : null;
-  var _origNext = typeof window.nav.next === 'function' ? window.nav.next : null;
-
-  window.nav.back = function (el) {
-    var n = getPageNumberFrom(el);
-    // se estiver na primeira página da parte 2, voltar para o fim da parte 1
-    if (!isNaN(n) && n === FIRST_P2) {
-      window.location.href = PART1_FILE + '#p' + LAST_P1;
-      return;
-    }
-    if (_origBack) return _origBack.call(this, el);
-  };
-
-  window.nav.next = function (el) {
-    var n = getPageNumberFrom(el);
-    // se estiver na última página da parte 1, seguir para o começo da parte 2
-    if (!isNaN(n) && n === LAST_P1) {
-      window.location.href = PART2_FILE + '#p' + FIRST_P2;
-      return;
-    }
-    if (_origNext) return _origNext.call(this, el);
-  };
-
-  // ao carregar, se vier com hash (#p113), rola até a página certa
-  if (location.hash) {
-    var target = document.getElementById(location.hash.slice(1));
-    if (target) target.scrollIntoView();
-  }
-});
-</script>
-
 <link rel="stylesheet" href="assets/css/in5.slider.css" media="all">
 <link rel="stylesheet" href="assets/css/pages.css" media="all">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -130,7 +79,9 @@ document.addEventListener('DOMContentLoaded', function () {
      </div>
     </div>
    </button>
-   <button data-id="443" name="Button 2" onclick="nav.back(this);" aria-label="Button 2" id="item443" class="pageItem ">
+      <button data-id="443" name="Button 2"
+        onclick="window.location.href='part01.html#p181';"
+        aria-label="Button 2" id="item443" class="pageItem ">
     <div class="pageItem state btn-off">
      <div id="item405" class="pageItem fauxgroup" alt="Rectangle">
       <img src="assets/images/blank.gif" alt="SVG" style="width:69px !important;height:50px !important;" id="item3974" class="pageItem " data-src="assets/images/icon-prev.svg"/>
