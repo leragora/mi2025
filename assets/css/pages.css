@@ -3361,10 +3361,6 @@ body, #container-wrap { background:#f7f4ed; }
 }
 
 #item26623 {
-	background-image: url('assets/images/an_aguiabranca.webp')!important; 
-    background-size: cover;      /* ou 'contain', dependendo do ajuste desejado */
-    background-position: center;
-    background-repeat: no-repeat;
 	width:440px !important;
 	height:490px !important;
 	left:13px !important;
