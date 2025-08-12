@@ -1,7 +1,165 @@
 export const msoConfigs = {
   // Pesquisa 
+  item5851: {
+    'graf-01': {
+      containerId: 'item5837',
+      path: './assets/json/graf-01.json'
+    },
+    'graf-faixa': {
+      containerId: 'item5838',
+      path: './assets/json/graf-faixa.json'
+    },
+    'graf-trabalho': {
+      containerId: 'item5839',
+      path: './assets/json/graf-trabalho.json'
+    },
+    'graf-escola': {
+      containerId: 'item5842',
+      path: './assets/json/graf-escola.json'
+    },
+    'graf-religiao': {
+      containerId: 'item5844',
+      path: './assets/json/graf-religiao.json'
+    },
+    'graf-moradia': {
+      containerId: 'item5847',
+      path: './assets/json/graf-moradia.json'
+    },
+    'graf-classe': {
+      containerId: 'item5849',
+      path: './assets/json/graf-classe.json'
+    }
+  },
+  
   // Categorias
 
+  item26618: {
+    'agua': {
+      containerId: 'item26623',
+      path: './assets/json/pedrazul.json'
+    }
+  }, 
+  
+  item41805: {
+    'agua': {
+      containerId: 'item41810',
+      path: './assets/json/campinho.json'
+    }
+  },
+
+  item12512: {
+    'arroz': {
+      containerId: 'item12518',
+      path: './assets/json/arroz.json'
+    }
+  },
+
+  item11431: {
+    'chocolate': {
+      containerId: 'item11436',
+      path: './assets/json/chocolate.json'
+    },
+    'industria-capixaba': {
+      containerId: 'item11447',
+      path: './assets/json/industria.json'
+    }
+  },
+
+  item17481: {
+    'trigo': {
+      containerId: 'item17486',
+      path: './assets/json/trigo.json'
+    },
+    'bolo': {
+      containerId: 'item17496',
+      path: './assets/json/bolo.json'
+    }
+  },  
+
+  item41220: {
+    'linguica': {
+      containerId: 'item41225',
+      path: './assets/json/linguica.json'
+    }
+  },
+
+  item14903: {
+    'macarrao': {
+      containerId: 'item14908',
+      path: './assets/json/macarrao.json'
+    }
+  },
+
+  item19958: {
+    'padaria': {
+      containerId: 'item19963',
+      path: './assets/json/monza.json'
+    }
+  },
+
+  item38891: {
+    'padaria': {
+      containerId: 'item38896',
+      path: './assets/json/libano.json'
+    }
+  },
+
+  item38240: {
+    'sal': {
+      containerId: 'item38245',
+      path: './assets/json/sal.json'
+    }
+  },
+
+  item28464: {
+    'supermercado': {
+      containerId: 'item28469',
+      path: './assets/json/supermercado.json'
+    }
+  },
+
+  item43532: {
+    'moveis': {
+      containerId: 'item43539',
+      path: './assets/json/moveisfabrica.json'
+    }
+  },
+
+  item35957: {
+    'informatica': {
+      containerId: 'item35962',
+      path: './assets/json/informatica.json'
+    }
+  },
+
+  item13697: {
+    'loja-roupa': {
+      containerId: 'item13702',
+      path: './assets/json/loja-roupa.json'
+    }
+  },
+
+  item36435: {
+    'utilidades': {
+      containerId: 'item36440',
+      path: './assets/json/utilidades.json'
+    }
+  }, 
+
+  item16138: {
+    'ead': {
+      containerId: 'item16143',
+      path: './assets/json/ead.json'
+    },
+      'superior': {
+      containerId: 'item16155',
+      path: './assets/json/superior.json'
+    },
+      'posgraduacao': {
+      containerId: 'item16167',
+      path: './assets/json/posgraduacao.json'
+    }
+  }, 
 
   item23444: {
     'ensino-fundamental': {
@@ -189,6 +347,6 @@ export const msoConfigs = {
       containerId: 'item6471',
       path: './assets/json/passageiros.json'
     }
-  } 
+  }, 
 
 }
