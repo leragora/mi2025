@@ -239,7 +239,6 @@ function AnimationItem(obj, seq){
 	this.init = function(){
 		this.hideEnd && this.$element.removeClass('hidden');
 		this.hideStart && this.$element.addClass('hidden');
-		this.stop();
 		return this;
 	};
 	!this.noInit && this.init();
