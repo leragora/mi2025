@@ -200,6 +200,13 @@ export const msoConfigs = {
     }
   }, 
 
+  item47694: {
+    'ferragens02': {
+      containerId: 'item47699',
+      path: './assets/json/distriferro.json'
+    }
+  },   
+
   item14279: {
     'construtora': {
       containerId: 'item14285',

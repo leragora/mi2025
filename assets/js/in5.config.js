@@ -62,7 +62,7 @@ var sliderSettings = {}, nav = {}, in5 = {layouts:[
  		"index": 0
  	}
  ]},
-viewOpts = {"title":0,"page":0,"zoom":0,"fs":0,"pdf":0,"toc":0,"thumbs":0,"progress":0,"bg":"#000","loadText":"carregando...","footer":0};
+viewOpts = {"title":0,"page":0,"zoom":0,"fs":0,"pdf":0,"toc":0,"thumbs":0,"progress":0,"bg":"#000","footer":0};
 var uAgent = navigator.userAgent.toLowerCase();
 var isIOS = ((/iPad|iPhone|iPod/.test(navigator.platform) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)) && !window.MSStream), 
 	isIPad = uAgent.indexOf("ipad") > -1 || (isIOS && window.devicePixelRatio < 3), isIPhone = uAgent.indexOf("iphone") > -1 || (isIOS && window.devicePixelRatio > 2),
@@ -919,7 +919,7 @@ function getOrientation() {
 }
 
 function addNavProps(){
-	if(nav.numPages === undefined) nav.numPages=197;
+	if(nav.numPages === undefined) nav.numPages=200;
 	nav.rtl = $('#slider').attr('data-dir') == 'rtl';
 	if(nav.rtl) $('html').attr('data-dir', 'rtl');
 	nav.init = function() { setTimeout(function(){nav.to(getStartPage());},1); };
